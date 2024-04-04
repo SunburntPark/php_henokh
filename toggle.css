@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #050505;
+    /* margin: 20px;
+    padding: 20px; */
+    transition: .5s;
+}
+header {
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+header .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .nav-list h2 {
+    font-size: 1.7rem;
+    color: yellow;
+}
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    gap: 25px;
+}
+.nav-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: rgb(4, 49, 4);
+}
+section input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+section input[type="checkbox"]:checked {
+   background-color: #3664ff;
+}
+section input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 1.5px;
+    transition: .5s ease;
+}
+section input[type="checkbox"]:checked::before {
+    transform: translateX(19px);
+}
+section .dark {
+    background-color: #333333;
+    color: #fcfcfc;
+}
+section .content {
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+section .content h3 {
+    font-size: 2.3rem;
+    color: darkgreen;
+}
+section .content h2 {
+    font-size: 3rem;
+    color: green;
+}
+section img {
+    width: 30%;
+    float: right;
+    margin-bottom: 5%;
+    margin-right: 7%;
+    box-shadow: 5px 5px 20px green;
+    border-radius: 50%;
+    background-color: repeating;
+}
+section img::before, section img::after {
+    content: '';
+    position: relative;
+    left: -3px;
+    top: -3px;
+    background: linear-gradient(45deg green darkgreen);
+}
+section .tombol {
+    margin-top: 5%;
+    width: 20%;
+    background-color: green;
+    line-height: 55px;
+}
+section .tombol a {
+    padding-left: 25%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #050505;
+}
+section .tombol:hover {
+    background-color: #000000;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+section .tombol a:hover {
+    color: green;
+}
